@@ -196,7 +196,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
   gap: 32px;
 }
 .cover-photo {
-  max-width: 220px;
+  max-width: 300px;
 }
 .cover-photo img { filter: grayscale(1) brightness(0.88) contrast(1.05); }
 .scroll-indicator {
@@ -481,7 +481,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 }
 
 /* ---------- fade-in on scroll ---------- */
-.fade { opacity: 0; transform: translateY(18px); transition: opacity 1.1s ease, transform 1.1s ease; }
+.fade { opacity: 0; transform: translateY(18px); transition: opacity 0.4s ease, transform 0.4s ease; }
 .fade.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .fade, .fade.in { opacity: 1; transform: none; transition: none; }
@@ -494,7 +494,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
   .cover { min-height: auto; padding-top: 32px; }
   .cover-center { padding: 60px 0; }
   .cover-bottom { flex-direction: column; align-items: flex-start; gap: 40px; }
-  .cover-photo { max-width: 180px; }
+  .cover-photo { max-width: 240px; }
 
   .eha-body-row,
   .stacc-body-row,
@@ -595,7 +595,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 <section id="stacc">
   <header class="section-header fade">
     <div class="section-num">02 · stacc</div>
-    <div class="meta-dim">estonia's biggest data science agency &nbsp;·&nbsp; 2022 – 2024</div>
+    <div class="meta-dim">forward deployed data scientist &nbsp;·&nbsp; 2022 – 2024</div>
   </header>
 
   <h2 class="display stacc-headline fade">
@@ -605,9 +605,9 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
   <div class="stacc-body-row fade" style="margin-top:50px;">
     <div>
       <p class="body-text">
-        three years at stacc, estonia's biggest data science agency, shipping ml
-        across client after client, sector after sector. energy, retail, agritech,
-        and more.
+        three years at stacc, an applied ml firm shipping production systems for
+        enterprise customers. work in sectors like retail, climate tech,
+        manufacturing, and more.
       </p>
       <p class="body-text" style="margin-top:16px;">
         you get accustomed to every kind of data. and mainly to the fact that
@@ -667,36 +667,11 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 </section>
 
 <!-- ========================================================= -->
-<!-- 03 · ECB SCHOLAR                                           -->
-<!-- ========================================================= -->
-<section id="ecb">
-  <header class="section-header fade">
-    <div class="section-num">03 · european central bank</div>
-    <div class="meta-dim">frankfurt / 2024 – 2025</div>
-  </header>
-
-  <div class="ecb-row fade">
-    <div>
-      <h2 class="display ecb-headline">chosen by the european central bank.</h2>
-      <p class="body-text" style="margin-top:36px;">
-        competitive eu-wide scholarship for women in economics and tech. €10,000
-        grant plus ecb mentorship. selected for outstanding academic achievement
-        and technical expertise.
-      </p>
-    </div>
-    <figure class="photo ecb-photo">
-      <img src="images/ecb.jpg" alt="ECB scholarship session">
-      <figcaption>ecb scholarship session, frankfurt, 2024</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ========================================================= -->
-<!-- 04 · ON STAGE.                                             -->
+<!-- 03 · ON STAGE.                                             -->
 <!-- ========================================================= -->
 <section id="on-stage">
   <header class="section-header fade">
-    <div class="section-num">04 · on stage</div>
+    <div class="section-num">03 · on stage</div>
     <div class="meta-dim">panels · talks · public speaking</div>
   </header>
 
@@ -720,11 +695,11 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 </section>
 
 <!-- ========================================================= -->
-<!-- 05 · RESEARCH                                              -->
+<!-- 04 · RESEARCH                                              -->
 <!-- ========================================================= -->
 <section id="research">
   <header class="section-header fade">
-    <div class="section-num">05 · research</div>
+    <div class="section-num">04 · research</div>
     <div class="meta-dim">aalto · estonian biobank / 2025 – 2026</div>
   </header>
 
@@ -773,6 +748,32 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 </section>
 
 <!-- ========================================================= -->
+<!-- 05 · ECB SCHOLAR                                           -->
+<!-- ========================================================= -->
+<section id="ecb">
+  <header class="section-header fade">
+    <div class="section-num">05 · european central bank</div>
+    <div class="meta-dim">frankfurt / 2024 – 2025</div>
+  </header>
+
+  <div class="ecb-row fade">
+    <div>
+      <div class="kicker">award</div>
+      <h2 class="display ecb-headline">won the ecb's scholarship for women in tech.</h2>
+      <p class="body-text" style="margin-top:36px;">
+        competitive eu-wide award for women in economics and tech. €10,000
+        grant plus ecb mentorship. selected from across europe for outstanding
+        academic achievement and technical expertise.
+      </p>
+    </div>
+    <figure class="photo ecb-photo">
+      <img src="images/ecb.jpg" alt="ECB scholarship session">
+      <figcaption>ecb scholarship session, frankfurt, 2024</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ========================================================= -->
 <!-- 06 · ABOUT — OFF THE RECORD                                -->
 <!-- ========================================================= -->
 <section id="about">
@@ -785,7 +786,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 
   <p class="about-body fade">
     grew up in estonia. was the kid who took care of the animals. donkeys, chickens,
-    sheep, horses. real ones, for years.
+    sheep, horses.
     <br><br>
     co-founded a company at eighteen before i'd ever written a line of production
     code. came to machine learning from the math up. took the ferry across the
@@ -814,6 +815,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
     <div><span class="label">email —</span> <a href="mailto:lotta.lorette@gmail.com">lotta.lorette@gmail.com</a></div>
     <div><span class="label">linkedin —</span> <a href="https://linkedin.com/in/lotta-lorette-kalmaru" target="_blank" rel="noopener">linkedin.com/in/lotta-lorette-kalmaru</a></div>
     <div><span class="label">demo —</span> <a href="https://conformal-triage-demo.streamlit.app" target="_blank" rel="noopener">conformal-triage-demo.streamlit.app</a></div>
+    <div><span class="label">cv —</span> <a href="https://drive.google.com/file/d/1AG9uQ0DA_mqORveGec4K3Hy-wimueuY1/view?usp=drive_link" target="_blank" rel="noopener">view cv</a></div>
   </div>
 
   <div class="footer">
