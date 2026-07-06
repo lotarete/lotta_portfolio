@@ -209,7 +209,46 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
   opacity: 0.85;
 }
 
-/* ---------- 01 eha ---------- */
+/* ---------- 01 darcy ---------- */
+.darcy-wordmark { width: clamp(190px, 30vw, 360px); margin-bottom: 40px; }
+.darcy-wordmark img { width: 100%; height: auto; }
+.darcy-row {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+.darcy-lead {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  color: var(--teal);
+}
+.darcy-meta-line {
+  margin-top: 30px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bone);
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.darcy-tag {
+  border: 1px solid rgba(10,186,181,0.4);
+  padding: 5px 12px;
+  color: var(--teal);
+}
+@media (max-width: 900px) {
+  .darcy-row { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* ---------- 02 eha ---------- */
 .eha-headline {
   font-size: clamp(44px, 7.2vw, 112px);
 }
@@ -548,11 +587,49 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 </section>
 
 <!-- ========================================================= -->
-<!-- 01 · FIRST JOB TITLE: CO-FOUNDER.                          -->
+<!-- 01 · DARCY — CURRENT.                                       -->
+<!-- ========================================================= -->
+<section id="darcy">
+  <header class="section-header fade">
+    <div class="section-num">01 · darcy</div>
+    <div class="meta-dim">co-founder / 2026 –</div>
+  </header>
+
+  <div class="darcy-row fade">
+    <div>
+      <div class="darcy-wordmark">
+        <img src="images/darcy-wordmark-ivory.svg" alt="Darcy">
+      </div>
+      <p class="darcy-lead">
+        an agent that plans real-life events, end to end.
+      </p>
+      <p class="body-text" style="margin-top:24px;">
+        you call darcy and say "i want a 60th birthday for 30 people."
+        it ideates, reaches out to vendors, coordinates, and books. you just show up.
+      </p>
+      <p class="body-text" style="margin-top:16px;">
+        every moment worth celebrating deserves exceptional planning. one
+        conversation becomes a booked, coordinated event.
+      </p>
+      <div class="darcy-meta-line">
+        <span class="darcy-tag">backed by project europe</span>
+        <span class="darcy-tag">arriving september 2026</span>
+      </div>
+    </div>
+
+    <figure class="photo">
+      <img src="images/darcy_team.jpg" alt="The Darcy founding team">
+      <figcaption>darcy founding team, 2026</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- 02 · FIRST JOB TITLE: CO-FOUNDER.                          -->
 <!-- ========================================================= -->
 <section id="eha">
   <header class="section-header fade">
-    <div class="section-num">01 · eha lighting</div>
+    <div class="section-num">02 · eha lighting</div>
     <div class="meta-dim">estonia / 2019 – 2021</div>
   </header>
 
@@ -596,7 +673,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 <!-- ========================================================= -->
 <section id="stacc">
   <header class="section-header fade">
-    <div class="section-num">02 · stacc</div>
+    <div class="section-num">03 · stacc</div>
     <div class="meta-dim">forward deployed data scientist &nbsp;·&nbsp; 2022 – 2024</div>
   </header>
 
@@ -673,7 +750,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 <!-- ========================================================= -->
 <section id="on-stage">
   <header class="section-header fade">
-    <div class="section-num">03 · on stage</div>
+    <div class="section-num">04 · on stage</div>
     <div class="meta-dim">panels · talks · public speaking</div>
   </header>
 
@@ -701,7 +778,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 <!-- ========================================================= -->
 <section id="research">
   <header class="section-header fade">
-    <div class="section-num">04 · research</div>
+    <div class="section-num">05 · research</div>
     <div class="meta-dim">aalto · estonian biobank / 2025 – 2026</div>
   </header>
 
@@ -754,7 +831,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 <!-- ========================================================= -->
 <section id="ecb">
   <header class="section-header fade">
-    <div class="section-num">05 · european central bank</div>
+    <div class="section-num">06 · european central bank</div>
     <div class="meta-dim">frankfurt / 2024 – 2025</div>
   </header>
 
@@ -780,7 +857,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 <!-- ========================================================= -->
 <section id="about">
   <header class="section-header fade">
-    <div class="section-num">06 · off the record</div>
+    <div class="section-num">07 · off the record</div>
     <div class="meta-dim">the personal column</div>
   </header>
 
@@ -812,7 +889,7 @@ section + section { border-top: 1px solid rgba(232,221,200,0.12); }
 <!-- 07 · BACK PAGE                                             -->
 <!-- ========================================================= -->
 <section id="contact" class="contact">
-  <div class="section-num fade" style="margin-bottom:22px;">07 · back page</div>
+  <div class="section-num fade" style="margin-bottom:22px;">08 · back page</div>
   <h2 class="contact-headline fade">let's talk.</h2>
 
   <div class="contact-lines fade">
